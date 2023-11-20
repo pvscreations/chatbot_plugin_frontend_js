@@ -59,5 +59,35 @@
 
     </div>
 </body>
-<script src="./chat.js"></script>
+<script src="./chatx.js"></script>
+<script type="text/javascript">
+    var a={
+    "attendance issues": {
+        "teacher": "database is down currently",
+        "app": {
+            "hanging": "requirements are 4gb",
+            "report issues": {
+                "on service": "database is down currently",
+                "on help": "database is down currently"
+            }
+        },
+        "other": "database is down currently"
+    },
+    "want to know my attendance?": {
+        "yearly": "database is down currently",
+        "monthly": "database is down currently",
+        "todays": "database is down currently",
+        "other": "database is down currently"
+    },
+    "raise complaint?": {
+        "on faculty": "database is down currently",
+        "on ams_app": "database is down currently",
+        "other": "database is down currently"
+    },
+    "want to give feedback on app?": "database is down currently",
+};
+    const assistant=new Chatbot({content:a,container:document.getElementById("chat"),objectName:"assistant"},{welcomeMsg:"hi i am chotay betay","sendOfMsg":"goodbye",redirectLink:"b.html"});
+    assistant.initialise();
+
+</script>
 </html>
