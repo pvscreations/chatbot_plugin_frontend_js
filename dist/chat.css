@@ -1,0 +1,48 @@
+    #chat{
+        width:50%;
+        margin:auto;
+        border:2px solid green;
+        list-style-type: none;
+        position: relative;
+    }
+    .initial{
+        font-weight: bold;
+
+    }
+    .client{
+        display: flex;
+        justify-content: end; 
+      
+    }
+    .clientchat{       
+        border:1px solid red;
+        color:green
+    }
+    .clientchat:hover{
+        background-color:rgb(70, 176, 70);
+        color:white;
+    }
+    .botchat:hover{
+        background-color: rgb(180, 89, 89);
+        color:white;
+    }
+    .bot{
+       display: inline-block;
+        max-width:50%;
+       
+    }
+    .botchat{       
+        border:1px solid gray;
+            
+    }
+.clientchat{
+    max-width:50%;
+}
+    .botchat,.clientchat{
+        padding:5px;
+        border-radius:1px 10px 10px 10px;
+        cursor: pointer;
+       margin:2px;
+
+    }
+
