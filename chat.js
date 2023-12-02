@@ -23,6 +23,7 @@ var Chatbot = /** @class */ (function () {
         this.chat = __assign(__assign({}, this.chat), chat);
         console.log(chat);
         this.containerRef = container;
+        this.containerRef.style.position = "relative";
     }
     Chatbot.prototype.initialise = function () {
         var x = document.createElement("li");
@@ -65,7 +66,7 @@ var Chatbot = /** @class */ (function () {
     Chatbot.prototype.finalise = function () {
         var x = document.createElement("div");
         x.setAttribute("class", "bot");
-        x.innerHTML = "<li class='botchat' onclick='(()=>{".concat(Chatbot.objectName, ".reciever(\"RESTART\"),").concat(Chatbot.objectName, ".initial(").concat(JSON.stringify(Chatbot.chatContent), ")})()'>Restart</li><li class='botchat' onClick=\"agent()\"><a href=\"").concat(this.chat.redirectLink, "\">").concat(this.chat.redirectMsg, "</a></li>");
+        x.innerHTML = "<li class='botchat' onclick='(()=>{".concat(Chatbot.objectName, ".reciever(\"RESTART\"),").concat(Chatbot.objectName, ".initialise()})()'>Restart</li><li class='botchat' onClick=\"agent()\"><a href=\"").concat(this.chat.redirectLink, "\">").concat(this.chat.redirectMsg, "</a></li>");
         this.containerRef.appendChild(x);
     };
     ;

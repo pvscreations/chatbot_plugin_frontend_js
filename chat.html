@@ -3,16 +3,24 @@
 <head>
 <title>'title her'
 </title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.0-alpha/chat.css">
+<link rel="stylesheet" href="./chat.css">
+<style type="text/css">
+   #chat{
+        width:50%;
+        margin:auto;
+        border:2px solid green;
+    } 
+</style>
 </head>
 <body>
     <div id="chat">
 
     </div>
 </body>
-<script src="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.0-alpha/chat.js"></script>
+<script src="./chat.js"></script>
 <script type="text/javascript">
-    var a={
+    // This is the questions data
+    var content={
     "attendance issues": {
         "teacher": "database is down currently",
         "app": {
@@ -37,7 +45,33 @@
     },
     "want to give feedback on app?": "database is down currently",
 };
-    const assistant=new Chatbot({content:a,container:document.getElementById("chat"),objectName:"assistant"},{welcomeMsg:"hi i am chotay betay","sendOfMsg":"goodbye",redirectLink:"b.html"});
+    /**
+     * Here we call the chatbot
+     * param1 is the required information to be sent to class
+            * content is object of question,
+            * container is in which you want to render the chat
+            * objectname is the object you are creating
+     *param2 is optional which is used to customize the chatbot
+            *welcomeMsg describes the chatbot msg which is hi i am xyz
+            *sendofmsg describes the final msg of chatbot like goodbye
+            *redirectlink is the link at final stage where you want to redirect the chatbot
+     * 
+    */
+    const assistant=new Chatbot(
+        {
+            content:content,
+            container:document.getElementById("chat"),
+            objectName:"assistant" //It is the object name you are creating here it is assistant you was creating line60
+        },
+        {
+            welcomeMsg:"hi i am your attendance assistant",
+            sendOfMsg:"goodbye",
+            redirectLink:"realtimechat.html"
+        }
+    );
+    /**
+     * Here we call the chatbot to come into effect
+    */
     assistant.initialise();
 
 </script>

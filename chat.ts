@@ -17,6 +17,7 @@ class Chatbot{
         this.chat={...this.chat,...chat};
         console.log(chat);
         this.containerRef=container;
+        this.containerRef.style.position="relative";
     }
 
     initialise(){
@@ -60,7 +61,7 @@ class Chatbot{
     finalise(){
         let x=document.createElement("div");
         x.setAttribute("class","bot");
-        x.innerHTML=`<li class='botchat' onclick='(()=>{${Chatbot.objectName}.reciever("RESTART"),${Chatbot.objectName}.initial(${JSON.stringify(Chatbot.chatContent)})})()'>Restart</li><li class='botchat' onClick="agent()"><a href="${this.chat.redirectLink}">${this.chat.redirectMsg}</a></li>`;
+        x.innerHTML=`<li class='botchat' onclick='(()=>{${Chatbot.objectName}.reciever("RESTART"),${Chatbot.objectName}.initialise()})()'>Restart</li><li class='botchat' onClick="agent()"><a href="${this.chat.redirectLink}">${this.chat.redirectMsg}</a></li>`;
         this.containerRef.appendChild(x);
     };
     feedback(){

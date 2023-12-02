@@ -1,48 +1,56 @@
-    #chat{
-        width:50%;
-        margin:auto;
-        border:2px solid green;
-        list-style-type: none;
-        position: relative;
-    }
+    /* It descirbes the welcome msg say hi i am your assitant */
     .initial{
         font-weight: bold;
+        list-style-type:none;
+        text-transform: capitalize;
 
     }
+
+    /* It describes the container of client chat or right side chat */
     .client{
         display: flex;
         justify-content: end; 
       
     }
+
+    /* This below describes the chat of client or right side chat */
     .clientchat{       
-        border:1px solid red;
-        color:green
+        border:1px solid darkcyan;
+        color:green;
+        max-width:50%;
+
     }
     .clientchat:hover{
-        background-color:rgb(70, 176, 70);
+        background-color:rgb(123, 94, 228);
         color:white;
     }
-    .botchat:hover{
-        background-color: rgb(180, 89, 89);
-        color:white;
-    }
+
+    /* It describes the container of bot chat or left side chat */
+
     .bot{
-       display: inline-block;
-        max-width:50%;
-       
-    }
+        display: inline-block;
+         max-width:50%;       
+     }
+    /* This below describes the chat of client or right side chat */
+
     .botchat{       
         border:1px solid gray;
             
     }
-.clientchat{
-    max-width:50%;
-}
+
+    .botchat:hover{
+        background-color: rgb(172, 89, 180);
+        color:white;
+    }
+ 
+    /* This describes the common properties of both client and bot chat */
     .botchat,.clientchat{
         padding:5px;
         border-radius:1px 10px 10px 10px;
         cursor: pointer;
        margin:2px;
+       list-style-type:none;
+
 
     }
 
