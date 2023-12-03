@@ -8,17 +8,17 @@ In todays tech-driven landscape, it is become increasingly common for applicatio
 To effortlessly incorporate the chatbot into your project, follow these simple steps:
 #### Include CDN of  CSS ####
 ```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.0/chat.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.2/lib/chat.css">
 
 ```
 ** Include CDN of Javascript **
 ```
-<script src="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.0/chat.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.2/lib/chat.js"></script>
 ```
 ### 1.2.Downloading files to project source code
 For a local implementation, download the required files from the following links:
-* <a href="https://github.com/pvscreations/chatbot/releases/download/v1.0.1/chat.css">download chat css file here</a>
-* <a href="https://github.com/pvscreations/chatbot/releases/download/v1.0.1/chat.js"> download chat js file here</a>
+* <a href="https://github.com/pvscreations/chatbot/releases/download/v1.0.2/lib/chat.css">download chat css file here</a>
+* <a href="https://github.com/pvscreations/chatbot/releases/download/v1.0.1/lib/chat.js"> download chat js file here</a>
 # 2.Initialising Chatbot
 #### 2.1 .Define your questions and answers in a structured JSON format: ####
 ```
@@ -83,10 +83,10 @@ const assistant=new Chatbot(
     assistant.initialise();
 ```
 # Future Scopes
-* #### Value Added Service (VAS) ####: Integrate a service for generating query and answer JSON objects.
-* #### Modularity in Styling ####: Enhance styling modularity for a more adaptable design.
-* #### Cross-Platform Support ####: Develop similar packages for Flutter, React Native, and React.
-* #### Analytics Integration ####: Incorporate analytics for a deeper understanding of user interactions.
+* <b> Value Added Service (VAS) </b>: Integrate a service for generating query and answer JSON objects.
+* <b> Modularity in Styling</b> : Enhance styling modularity for a more adaptable design.
+* <b> Cross-Platform Support</b> : Develop similar packages for Flutter, React Native, and React.
+* <b> Analytics Integration </b>: Incorporate analytics for a deeper understanding of user interactions.
 
 # References
 * Explore the example to see how the chatbot's basic layout looks and functions. Feel free to leverage this powerful tool for a more engaging and interactive user experience in your projects!
