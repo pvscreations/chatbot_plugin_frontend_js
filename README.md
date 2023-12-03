@@ -11,7 +11,7 @@ To effortlessly incorporate the chatbot into your project, follow these simple s
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.2/lib/chat.css">
 
 ```
-** Include CDN of Javascript **
+### Include CDN of Javascript ###
 ```
 <script src="https://cdn.jsdelivr.net/gh/pvscreations/chatbot@v1.0.2/lib/chat.js"></script>
 ```
@@ -90,5 +90,6 @@ const assistant=new Chatbot(
 
 # References
 * Explore the example to see how the chatbot's basic layout looks and functions. Feel free to leverage this powerful tool for a more engaging and interactive user experience in your projects!
-## <a href="https://pvscreations.github.io/chatbot/example/chat.html">Example</a>
+  - ## <a href="https://pvscreations.github.io/chatbot/example/chat.html">Click here for Example</a>
+  - ## <a href="https://github.com/pvscreations/chatbot/tree/main/example">Click here for Example Code</a>
 
