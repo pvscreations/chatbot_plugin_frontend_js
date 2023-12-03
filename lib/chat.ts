@@ -15,7 +15,6 @@ class Chatbot{
         Chatbot.chatContent=content;
         Chatbot.objectName=objectName;
         this.chat={...this.chat,...chat};
-        console.log(chat);
         this.containerRef=container;
         this.containerRef.style.position="relative";
     }
@@ -41,7 +40,6 @@ class Chatbot{
        x.setAttribute("class","bot");
         x.innerHTML=con;
         this.containerRef.appendChild(x);
-        // console.log(con)
         }
         else{
             this.reciever(`'${messageContent}'`);

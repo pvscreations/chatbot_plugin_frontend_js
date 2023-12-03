@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<title>'title her'
+<title>chatbot
 </title>
-<link rel="stylesheet" href="./chat.css">
+<link rel="stylesheet" href="../lib/chat.css">
 <style type="text/css">
    #chat{
         width:50%;
@@ -17,7 +17,7 @@
 
     </div>
 </body>
-<script src="./chat.js"></script>
+<script src="../lib/chat.js"></script>
 <script type="text/javascript">
     // This is the questions data
     var content={
@@ -25,6 +25,8 @@
         "teacher": "database is down currently",
         "app": {
             "hanging": "requirements are 4gb",
+            "Camera": "Allow camera in pop-up box",
+            "Taking time to load": "Maintain proper network connection",
             "report issues": {
                 "on service": "database is down currently",
                 "on help": "database is down currently"
@@ -61,7 +63,7 @@
         {
             content:content,
             container:document.getElementById("chat"),
-            objectName:"assistant" //It is the object name you are creating here it is assistant you was creating line60
+            objectName:"assistant" 
         },
         {
             welcomeMsg:"hi i am your attendance assistant",
