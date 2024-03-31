@@ -17,8 +17,8 @@ To effortlessly incorporate the chatbot into your project, follow these simple s
 ```
 ### 1.2.Downloading files to project source code
 For a local implementation, download the required files from the following links:
-* <a href="https://github.com/pvscreations/chatbot/releases/download/v1.0.2/lib/chat.css">download chat css file here</a>
-* <a href="https://github.com/pvscreations/chatbot/releases/download/v1.0.1/lib/chat.js"> download chat js file here</a>
+* <a href="/../../releases/download/v1.0.2/chat.css">download chat css file here</a>
+* <a href="/../../releases/download/v1.0.2/chat.js"> download chat js file here</a>
 # 2.Initialising Chatbot
 #### 2.1 .Define your questions and answers in a structured JSON format: ####
 ```
@@ -90,6 +90,5 @@ const assistant=new Chatbot(
 
 # References
 * Explore the example to see how the chatbot's basic layout looks and functions. Feel free to leverage this powerful tool for a more engaging and interactive user experience in your projects!
-  - ## <a href="https://pvscreations.github.io/chatbot/example/chat.html">Click here for Example</a>
-  - ## <a href="https://github.com/pvscreations/chatbot/tree/main/example">Click here for Example Code</a>
-
+  - ## <a href="https://pvscreations.github.io/chatbot_plugin_frontend_js/example/chat.html">Click here for Example</a>
+  - ## <a href="/../../tree/main/example">Click here for Example Code</a>
